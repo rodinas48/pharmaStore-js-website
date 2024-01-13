@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Condensed:wght@100;300;400;700&family=Carattere&family=Cinzel:wght@400;500;700&family=Codystar:wght@300&family=Jost:wght@100;300;400;700&family=Lobster&family=Montserrat:wght@100;300;400;700&family=Open+Sans:wght@300;400;500;700&family=Oswald:wght@300;400;500;700&family=Play:wght@400;700&family=Poppins:wght@100;300;400;500;600;700&family=Roboto+Condensed:wght@100;300;400;600;700&family=Roboto:wght@100;300;400;700&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        header {
+            position: relative;
+            width: 100%;
+            background-color: rgb(99, 99, 99);
+            padding: 6px 10px;
+            box-shadow: 1px 2px 10px 1px gainsboro;
+        }
+
+        .disabled {
+            pointer-events: none;
+            color: rgb(158, 158, 158) !important;
+        }
+
+        a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbarContainer navbar navbar-expand-lg w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#0">PharmaStore</a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link disabled" href="#0">About Us</a>
+                        </li>
+        
+                        <li class="nav-item ">
+                            <a class="nav-link disabled" href="#0">Services</a>
+                        </li>
+                        <li class="nav-item" id="loginLi">
+                            <a href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item" id="signupLi">
+                            <a href="signup.html">Sign Up</a>
+                        </li>
+                        <li class="nav-item" id="userInfo">
+                            <a href="#0" id="user"></a>
+                        </li>
+                        <li class="nav-item" id="logout">
+                            <a href="#0">Log Out</a>
+                        </li>
+                        <li class="nav-item" id="cart">
+                            <a href="#0">
+                                <img src="./images/whitecart.png" alt="cart" />
+                                <span class="productCount" id="cartProductCount">0</span>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            
+                        </li>
+                      
+                    </ul>
+                    <div class="cartProducts">
+                        <div></div>
+                        <a href="checkOutCart.html" class="view">View All products</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--/////////////// header tag /////////////// -->
+    <section class="products">
+        <div class="search">
+            <select name="search-option" id="search-option">
+                <option value="title">search by name</option>
+                <option value="categorey">search by categorey</option>
+            </select>
+            <input type="search" name="search" id="search" placeholder="Search" />
+        </div>
+        <!--  //////////  select and search  /////////-->
+        <div class="productsContainer">
+            <!-- <div class="product">
+                <div class="image">
+                    <img src="./images/product1.jpg" alt="p1" />
+                    <div class="icons">
+                        <a href="#0" class="heart"><i class="far fa-heart"></i></a>
+                        <a href="#0"><i class="far fa-eye"></i></a>
+                        <a href="#0"><i class="fas fa-exchange-alt"></i></a>
+                    </div> 
+                </div>
+                <div class="productInfo">
+                    <h3>Product : <span>Nebulizer</span></h3>
+                    <h3>
+                        Price : <span>$200 <del>$300</del></span>
+                    </h3>
+                    <h3>categorey : <span>Medical Device</span></h3>
+                    <a href="#0" class="addCart">
+                        <div class="iconContainer">
+                            <svg height="25px" width="25px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
+                                fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#CCCCCC" stroke-width="1.024"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: #606060;
+                                        }
+                                    </style>
+                                    <g>
+                                        <path class="st0"
+                                            d="M483.157,164.432H350.464l-60.034,58.983c-8.131,7.986-18.893,12.385-30.292,12.385 c-11.69,0-22.64-4.594-30.836-12.935c-15.835-16.132-16.414-41.598-1.942-58.432H28.843C12.914,164.432,0,177.346,0,193.282v9.617 c0,15.697,12.552,28.451,28.176,28.806l31.097,190.436c3.761,23.06,23.697,39.996,47.062,39.996h299.279 c23.372,0,43.294-16.936,47.062-39.996l31.104-190.436c15.632-0.333,28.22-13.088,28.22-28.806v-9.617 C512,177.346,499.086,164.432,483.157,164.432z M153.571,410.141c-2.558,2.833-6.203,4.457-10.015,4.457h-7.529 c-6.718,0-12.407-4.942-13.35-11.588l-16.559-117.083c-0.544-3.87,0.608-7.783,3.166-10.733c2.559-2.942,6.277-4.638,10.182-4.638 h11.828c6.906,0,12.689,5.211,13.407,12.074l12.262,117.09C157.354,403.517,156.122,407.3,153.571,410.141z M230.737,410.532 c-2.53,2.595-6.008,4.066-9.639,4.066h-7.71c-7.132,0-13.03-5.558-13.45-12.675l-6.957-117.09 c-0.218-3.704,1.101-7.342,3.645-10.038c2.55-2.703,6.095-4.24,9.812-4.24h12.016c7.326,0,13.306,5.856,13.472,13.168l2.652,117.09 C234.658,404.438,233.274,407.945,230.737,410.532z M312.02,401.923c-0.428,7.117-6.327,12.675-13.458,12.675h-7.711 c-3.63,0-7.102-1.471-9.631-4.066c-2.544-2.587-3.928-6.094-3.848-9.718l2.66-117.09c0.16-7.312,6.146-13.168,13.473-13.168h12.015 c3.703,0,7.261,1.537,9.805,4.24c2.544,2.696,3.862,6.334,3.645,10.038L312.02,401.923z M405.832,285.927l-16.56,117.083 c-0.934,6.645-6.631,11.588-13.341,11.588h-7.53c-3.819,0-7.464-1.624-10.016-4.457c-2.558-2.841-3.79-6.624-3.391-10.421 l12.255-117.09c0.717-6.863,6.508-12.074,13.407-12.074h11.828c3.906,0,7.616,1.696,10.175,4.638 C405.223,278.144,406.382,282.057,405.832,285.927z">
+                                        </path>
+                                        <path class="st0"
+                                            d="M277.618,210.363l119.88-117.756c9.828-9.661,9.965-25.452,0.312-35.279 c-9.653-9.827-25.452-9.972-35.278-0.318L242.658,174.78c-9.827,9.653-9.965,25.444-0.319,35.271 C252,219.878,267.783,220.023,277.618,210.363z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span>add to cart</span>
+                    </a>
+                </div>
+                
+            </div>  -->
+        </div><!-- all products container -->
+    </section> 
+     <script src="./js/script.js"></script>
+    <script src="./js/userInfo.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Page</title>
+	<link rel="stylesheet" href="./css/all.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Condensed:wght@100;300;400;700&family=Carattere&family=Cinzel:wght@400;500;700&family=Codystar:wght@300&family=Jost:wght@100;300;400;700&family=Lobster&family=Montserrat:wght@100;300;400;700&family=Open+Sans:wght@300;400;500;700&family=Oswald:wght@300;400;500;700&family=Play:wght@400;700&family=Poppins:wght@100;300;400;500;600;700&family=Roboto+Condensed:wght@100;300;400;600;700&family=Roboto:wght@100;300;400;700&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+		rel="stylesheet">
+
+</head>
+
+<body>
+
+	<main>
+		<div class="overley"> </div>
+		<header>
+			<!-- <div class="logo">PharmaStore</div> -->
+			<nav class="navbarContainer navbar navbar-expand-lg w-100">
+				<div class="container-fluid">
+					<a class="navbar-brand logo" href="#">PharmaStore</a>
+					<button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#0">About Us</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#0">Services</a>
+							</li>
+							<li class="nav-item" id="loginLi">
+								<a href="login.html">Login</a>
+							</li>
+							<li class="nav-item" id="signupLi">
+								<a href="signup.html">Sign Up</a>
+							</li>
+							<li class="nav-item" id="userInfo">
+								<a href="#0" id="user"></a>
+							</li>
+							<li class="nav-item" id="logout">
+								<a href="#0">Log Out</a>
+							</li>
+							<li class="nav-item" id="cart">
+								<a href="products.html">
+									<img src="./images/whitecart.png" alt="cart" />
+									<span class="productCount" id="cartProductCount">0</span>
+									<!-- <i class="fas fa-angle-down"></i> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- <nav class="navContainer">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#0">About Us</a></li>
+					<li><a href="#service">Services</a></li>
+					<li id="loginLi"><a href="login.html">Login</a></li>
+					<li id="signupLi"><a href="signup.html">Sign Up</a></li>
+					<li id="userInfo"><a href="#0" id="user"></a></li>
+					<li id="logout"><a href="#0">Log Out</a></li>
+					<li id="cart">
+						<a href="products.html">
+							<img src="./images/whitecart.png" alt="cart" />
+							<span class="productCount" id="cartProductCount">0</span>
+							<!-- <i class="fas fa-angle-down"></i> 
+						</a>
+					</li><!--  cart icon & counter -->
+			<!-- <div class="cartProducts">
+                        <div></div>
+                        <a href="#0" class="view">View All products</a>
+                    </div> -->
+			<!-- /////////// product cart div /////////// 
+				</ul>
+			</nav> -->
+		</header>
+		<div class="textMainPage">
+			<h6>WE</h6>
+			<h4>PRIORITY </h4>
+			<h3>YOUR </h3>
+			<h2>HEALTH</h2>
+			<a href="products.html" class="shopBtn">Shop Now <i class="fas fa-chevron-right"></i></a>
+		</div>
+		<div class="contactContainer">
+			<a href="#" class="pop"><i class="fas fa-chevron-circle-up popUp"></i></a>
+			<a href="#0" class="contactI"><i class="fab fa-facebook-f"></i></a>
+			<a href="#0" class="contactI"><i class="fab fa-whatsapp"></i></a>
+			<a href="#0" class="contactI"><i class="fab fa-instagram"></i></a>
+		</div>
+	</main>
+
+			<section class="categories">
+				<div class="container">
+					<div class="categorey col-7 col-sm-5 col-md-3 ">
+						<div class="images">
+							<img src="./images/pills.png" alt="pills" style="background-position:  center 90px;">
+			
+						</div>
+						<div class="info">
+							<h2>Medicines</h2>
+							<a href="#0">Shop <i class="fas fa-chevron-right"></i></a>
+						</div>
+			
+					</div>
+					<div class="categorey  col-7 col-sm-5 col-md-3">
+						<div class="images">
+							<img src="./images/device.png" alt="device">
+			
+			
+						</div>
+						<div class="info">
+							<h2>Medical Devices</h2>
+							<a href="#0">Shop <i class="fas fa-chevron-right"></i></a>
+						</div>
+					</div>
+					<div class="categorey col-7 col-sm-5 col-md-3">
+						<div class="images">
+							<img src="./images/suppliment.png" alt="suppliment">
+			
+			
+						</div>
+						<div class="info">
+							<h2>Health Suppliments</h2>
+							<a href="#0">Shop <i class="fas fa-chevron-right"></i></a>
+						</div>
+			
+					</div>
+				</div>
+			</section>
+	<section class="sales">
+		<div class="container">
+			<div class="sale ">
+				<img src="./images/t.jpg" alt="">
+				<div class="saleInfo">
+					<h2>Up To 50% Off</h2>
+					<p>On Medical Devices</p>
+					<p>Upgrade to Premium and Quality</p>
+					<a href="products.html">Shop Now</a>
+				</div>
+			</div>
+			<div class="sale bestSellers">
+				<div class="salesHeader">
+					<h2>Best Sellers</h2>
+					<div class="line"></div>
+				</div>
+				<div id="carouselExample" class="carousel slide">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+
+							<!-- <div class="container"> -->
+							<div class="row justify-content-evenly w-75 mx-auto my-5 gap-4">
+								<div class="productSale col-8 col-sm-7 col-md-6 col-lg-4 col-xl-3">
+									<div class="image">
+										<img src="./images/product2.jpg" alt="p2">
+										<div class="salediv">
+											50% OFF
+										</div>
+									</div>
+									<div class="productSaleInfo">
+										<h4>Arm measure blood pressure</h4>
+										<p class="price">$100 <del style="color: red;">$200</del></p>
+									</div>
+								</div>
+								<div class="productSale col-8 col-sm-7 col-md-6 col-lg-4 col-xl-3">
+									<div class="image">
+										<img src="./images/product3.jpg" alt="p3">
+										<div class="salediv">
+											60% OFF
+										</div>
+									</div>
+									<div class="productSaleInfo">
+										<h4>Digital Electroestimulador</h4>
+										<p class="price">$140 <del style="color: red;">$300</del></p>
+									</div>
+								</div>
+								<div class="productSale col-8 col-sm-7 col-md-6 col-lg-4 col-xl-3">
+									<div class="image">
+										<img src="./images/product6.jpg" alt="p6">
+										<div class="salediv">
+											50% OFF
+										</div>
+									</div>
+									<div class="productSaleInfo">
+										<h4>Tabletop spirometer</h4>
+										<p class="price">$125 <del style="color: red;">$250</del></p>
+									</div>
+								</div>
+								<!-- </div> -->
+							</div>
+						</div>
+						<div class="carousel-item">
+
+							<!-- <div class="container"> -->
+							<div class="row justify-content-evenly w-75 mx-auto my-5 gap-4">
+								<div class="productSale col-8 col-sm-7 col-md-6 col-lg-4 col-xl-3">
+									<div class="image">
+										<img src="./images/product9.jpg" alt="p9">
+										<div class="salediv">
+											50% OFF
+										</div>
+									</div>
+									<div class="productSaleInfo">
+										<h4>Massager EM 80</h4>
+										<p class="price">$130 <del style="color: red;">$260</del></p>
+									</div>
+								</div>
+								<div class="productSale col-8 col-sm-7 col-md-6 col-lg-4 col-xl-3">
+									<div class="image">
+										<img src="./images/product13.jpg" alt="p13">
+										<div class="salediv">
+											50% OFF
+										</div>
+									</div>
+									<div class="productSaleInfo">
+										<h4>Finger pulse oximeter</h4>
+										<p class="price">$65 <del style="color: red;">$130</del></p>
+									</div>
+								</div>
+								<div class="productSale col-8 col-sm-7 col-md-6 col-lg-4 col-xl-3">
+									<div class="image">
+										<img src="./images/product17.jpeg" alt="p17">
+										<div class="salediv">
+											50% OFF
+										</div>
+									</div>
+									<div class="productSaleInfo">
+										<h4>Vitamin D3</h4>
+										<p class="price">$35 <del style="color: red;">$70</del></p>
+									</div>
+								</div>
+							</div>
+							<!-- </div> -->
+						</div>
+						<div class="carousel-item">
+
+							<!-- <div class="container"> -->
+							<div class="row justify-content-evenly w-75 mx-auto my-5 gap-4">
+								<div class="productSale col-8 col-sm-7 col-md-6 col-lg-4 col-xl-3">
+									<div class="image">
+										<img src="./images/product22.png" alt="p22">
+										<div class="salediv">
+											60% OFF
+										</div>
+									</div>
+									<div class="productSaleInfo">
+										<h4>Medicine pills</h4>
+										<p class="price">$50 <del style="color: red;">$120</del></p>
+									</div>
+								</div>
+								<div class="productSale col-8 col-sm-7 col-md-6 col-lg-4 col-xl-3">
+									<div class="image">
+										<img src="./images/product29.jpeg" alt="p29">
+										<div class="salediv">
+											50% OFF
+										</div>
+									</div>
+									<div class="productSaleInfo">
+										<h4>Gaviscon</h4>
+										<p class="price">$75 <del style="color: red;">$150</del></p>
+									</div>
+								</div>
+								<div class="productSale col-8 col-sm-7 col-md-6 col-lg-4 col-xl-3">
+									<div class="image">
+										<img src="./images/product32.jpg" alt="p32">
+										<div class="salediv">
+											60% OFF
+										</div>
+
+									</div>
+									<div class="productSaleInfo">
+										<h4>Panadol migraine</h4>
+										<p class="price">$90 <del style="color: red;">$200</del></p>
+
+									</div>
+								</div>
+							</div>
+							<!-- </div> -->
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+						data-bs-slide="prev">
+						<i class="fas fa-arrow-left"></i>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+						data-bs-slide="next">
+						<i class="fas fa-arrow-right"></i>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="col-10 col-sm-8 col-md-6 col-lg-4">
+				<h5>About Us</h5>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus iure architecto a distinctio
+					necessitatibus voluptatum maxime aliquam, dolores voluptates. Doloremque laboriosam architecto error
+					corrupti provident temporibus officia dolor sint quasi.</p>
+			</div>
+			<div class="col-10 col-sm-8 col-md-6 col-lg-4">
+				<h5>Quick Links</h5>
+				<ul>
+					<li><a href="#0">About Us</a></li>
+					<li><a href="#0">Services</a></li>
+					<li><a href="#0">Shop</a></li>
+					<li><a href="#0">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="col-10 col-sm-8 col-md-6 col-lg-4">
+				<h5>Follow Us</h5>
+				<ul class="contact">
+					<li><i class="fab fa-facebook"></i></li>
+					<li><i class="fab fa-whatsapp"></i></li>
+					<li><i class="fab fa-instagram"></i></li>
+					<li><i class="fab fa-twitter"></i></li>
+				</ul>
+			</div>
+
+		</div>
+		<hr>
+		<div class="copyright">
+			<p>Copyright &copy;2024 All rights reserved | made by Rodina Sameh</p>
+		</div>
+	</footer>
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="./js/userInfo.js"></script>
+</body>
+
+</html>
